@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# NeuroTrack X
+**Azure-Powered AI Platform for Early Cognitive Risk Detection & Prevention**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Status](https://img.shields.io/badge/status-Demo_Ready-success.svg)
+![Stack](https://img.shields.io/badge/stack-React_Vite_Tailwind-orange.svg)
 
-Currently, two official plugins are available:
+> **Repository:** [https://github.com/ManyaValecha/neurotrack-x](https://github.com/ManyaValecha/neurotrack-x)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**NeuroTrack X** is an AI-powered cognitive health platform built to demonstrate the capabilities of Microsoft Azure AI. It continuously monitors subtle speech patterns to detect early cognitive risk trends years before traditional diagnosis.
 
-## React Compiler
+This repository contains the frontend demonstration developed for the **Microsoft Imagine Cup**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Live Demo / Features
 
-## Expanding the ESLint configuration
+Currently running locally.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Key Modules
+1.  **Dashboard**: Real-time visualization of the *Cognitive Risk Index (CRI)*.
+2.  **Voice Assessment**: Interactive speech recording interface simulating Azure Cognitive Services processing.
+3.  **Clinical Analytics**: Explainable AI insights breaking down risk factors (speech rate, pauses, vocabulary).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠 Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+-   **Frontend**: React, TypeScript, Vite
+-   **Styling**: TailwindCSS, Framer Motion (Animations)
+-   **Visualization**: Recharts
+-   **Icons**: Lucide React
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 💻 How to Run
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/ManyaValecha/neurotrack-x.git
+    cd neurotrack-x
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3.  **Start Development Server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in Browser**
+    Navigate to `http://localhost:5173`
+
+## 🧠 Project Architecture
+
+-   `/src/pages`: Main views (Dashboard, Assessment, Analytics).
+-   `/src/components`: Reusable UI components (Graphs, Gauges).
+-   `/src/data`: Mock data simulating Azure AI responses.
+
+---
+*Built for the Microsoft Imagine Cup.*
