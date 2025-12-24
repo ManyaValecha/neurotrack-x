@@ -1,5 +1,5 @@
 export const MOCK_USER = {
-    name: "Sarah Chen",
+    name: "User",
     age: 64,
     baselineDate: "2023-01-15",
     totalAssessments: 42,
